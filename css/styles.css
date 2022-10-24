@@ -440,25 +440,22 @@ padding: 6px 22px;
   width: 370px;
   list-style: none;
   display: flex;
-  
-}
-.
-
-.posters-container{
-display: block;
-column-gap: 30px;
-}
-
-
-.poster-card{
-  display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
 }
+.
 
-  
 
+.poster-card{
+
+  flex-basis: calc((100%-30px*2)/3);
+
+}
+
+ .poster-container{
+  display: flex;
+  flex-wrap: wrap;
+ }
 
 .heading {
 font-weight: 700;
