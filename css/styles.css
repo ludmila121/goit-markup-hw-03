@@ -43,8 +43,8 @@ img {
 
  address, 
  .footer-address  {
- font-style: normal;
- padding-right: 0;
+  font-style: normal;
+  padding-right: 0;
 }
 
  button {
@@ -63,9 +63,9 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-    outline: 2px solid red;
-    outline-offset: -2px;
-    }
+  outline: 2px solid red;
+  outline-offset: -2px;
+  }
 
 
 .list {
@@ -76,26 +76,34 @@ img {
 
 .link {
   text-decoration: none; 
-  /*color: inherit;*/
 }
 
-
-
-  body {
+body {
   background-color: var(--primary-white-color);
   color:var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+
+
+/* Шапка сайту*/
+.header{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .header-container{
   display: flex;
   align-items: center;
-  outline: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-
-.header-link {
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+  
+  .header-link {
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: 700;
@@ -103,52 +111,34 @@ img {
     line-height: 1.19;
     text-decoration: none;
     margin-right: 93px;
-    padding: 32px 0;
 }
+.link-contacts {
+  display: flex;
+}
+
 .first-part {
   color: var(--fourth-color);
 }
 .last-part {
   color: var(--primary-white-color);
 }
-.header-nav { 
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
- .header-item:not(:last-child){
+
+.header-item:not(:last-child){
   margin-right: 50px;
  }
-/*.main-nav {
-  display: flex;
-  align-items: center;
-}*/
 
-
-.link-contacts {
-  display: flex;
-  margin-left: 70px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-
-  .link-page {
+ .link-page {
   font-weight: 500;
   line-height: 1.17;
   text-decoration:none;
-  list-style: none;
-display: flex;
-align-items: center;
-padding-left: 0;
+  display: flex;
+  align-items: center;
   }
 
 .link-page-contact,
 .link-page-portfolio,
 .link-page-studio{
   color: var(--primary-text-color);
-  display: block;
   }
 
 
@@ -157,6 +147,7 @@ padding-left: 0;
 .link-page-studio,
 .link-curren {
 text-decoration: none;
+display: block;
 padding: 32px 0;
 }
 
@@ -166,7 +157,6 @@ padding: 32px 0;
 {color: var(--accent-color)
  }
 
-
 .link-page-studio:focus,
 .link-page-portfolio:focus,
 .link-page-contacts:focus
@@ -174,27 +164,16 @@ padding: 32px 0;
 }
 .link.current {
   color: var(--accent-color);
-  text-decoration: none;
-  padding: 32px 0;
 }
 
-
-
-.link-contacts{
- font-weight: 500;
-line-height: 1.17;
-letter-spacing:  0.02em;
-list-style: none;
+.header-contact:not(:last-child) {
+  margin-right: 50px;
 }
+
 .link-contacts-mail,
 .link-contacts-tel{
   color:var(--title-text-color);
   text-decoration: none;
-
-}
-.link-contacts-mail,
-.link-contacts-tel:not(:last-child)
-{margin-right: 50px;
 
 }
 
@@ -209,13 +188,15 @@ list-style: none;
 }
 
 
-
-
+/* HERO*/
+.banner{
+  padding: 200px 0;
+  background-color: var(--secundary-color)
+}
 .banner-container{
   display:block;
   align-items: center;
-  padding: 200px 0;
-  background-color: var(--secundary-color)
+
 }
 .banner-title{
   color:var(--primary-white-color);
@@ -231,8 +212,6 @@ list-style: none;
   margin-bottom: 30px;
 }
 
-
-
 .button {
   background-color:var(--accent-color);
   color:var(--primary-white-color);
@@ -240,12 +219,12 @@ list-style: none;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
   font-family: inherit;
-  margin: auto;   
+  margin: 0 auto;   
+  padding: 10px 32px;
  }
 
-.button:hover{
+ .button:hover{
   background-color: var(--seventh-color);
 }
 
@@ -253,23 +232,19 @@ list-style: none;
   background-color:var(--seventh-color);
  color: rgba(0, 0, 0, 0.15)
 }
-.poster-button{
-  display: flex;
-  align-items: center;
-}
+
+
+
+
+/* Наші переваги*/
+
 .benefits-section{
-  margin: 94px 0;
+  padding: 94px 0;
 }
 
 .benefits-type{
-  list-style: none;
   display: flex;
-  align-items: flex-start;
-margin-bottom: 94px;
-padding-bottom: 24px;
-margin-top: 0px;
-margin-left: 30px;
-padding-left: 0px;
+  gap: 30px;
 }
 
 
@@ -284,38 +259,25 @@ list-style: none;
 font-size: 14px;
 margin-top: 0;
 margin-bottom: 10px;
-
 }
 
 .benefits-text {
 color:var(--title-text-color);
-font-weight: 400;
 line-height: 1.71;
-margin-right: 30px;
+}
+
+
+/*Чим ми займаємось*/
+.work{ 
+  padding: 94px 0;
 }
 .work-type { 
-  width: 1170px;
-  list-style: none;
   display: flex;
-  align-items: center;
   gap: 30px;
-  flex-basis: calc((100% - 30px * 2) / 3);
-  padding-inline-start: 0px;
-  margin-bottom: 94px;
-  margin-top: 0;
-}
+  }
+  
 
-
-.team-type{
-  background-color: var(--fifth-color);
-  padding-top: 94px;
-}
-.work-container{
-  display: block;
-  padding-left: auto;
-  padding-right: auto;
-
-}
+/*Наша команда*/
 .work-title,
 .team-title {
   font-weight: 700;
@@ -324,32 +286,31 @@ margin-right: 30px;
   padding-right: 15px;
 text-align: center;
 margin-bottom: 50px;
+}
 
+.team-type {
+  background-color: var(--fifth-color);
+  padding: 94px 0;
 }
 .team-card{
   display: flex;
-  align-items: center;
- gap: 30px;
- padding-inline-start: 0px;
- margin-top: 0;
- margin-bottom: 0;
+  gap: 30px;
 }
 .card{
   background-color:var(--primary-white-color) ;
   width: 270px;
-  list-style: none;
-  margin-bottom: 94px;
   outline: 1px solid rgba(0, 0, 0, 0.2);
   }
 
-
+.card-name{
+  padding: 30px 0;
+}
 .team-name {
   font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 display: block;
 text-align: center;
-margin-top: 30px;
 margin-bottom: 10px;
 }
 
@@ -361,28 +322,23 @@ font-size: 16px;
 line-height: 1.18;
 display: block;
 text-align: center;
-margin-bottom: 30px;
 }
 
-
-
-.footer-container {
-    background-color: var(--secundary-color);
-  display: block;
-  text-align: start;
-  padding-top: 60px;
+.footer{
+background-color: var(--secundary-color);
+padding:60px 0;
 }
-.address{
+
+address{
   font-style: normal;
-  line-height: 1.71;
-  list-style: none;
-  padding-bottom: 60px;
+  margin-top: 20px;
 
 }
 
 .address-type{
  color: var(--primary-white-color);
  text-decoration: none;
+
 }
 .address-type:hover,
 .address-mail:hover,
@@ -390,35 +346,32 @@ margin-bottom: 30px;
 color: var(--accent-color);
 }
 
+.address-block:not(:last-child){
+  margin-bottom: 9px;
+}
 
 
 .address-mail,
 .address-tel {
   color:rgba(255, 255, 255, 0.6);
 text-decoration: none;
-}
-.footer-address{
-  display: block;
-  padding-left: 0;
-  margin-top: 20px;
-  margin-bottom: 0;
+margin-top: 9px;
 }
 
 .btn{
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
   margin-bottom: 50px;
   margin-top: 0;
+  gap: 8px;
+}
+.poster-button {
+  display: flex;
+  align-items: center;
 }
 
-
-.task-all,
-.task-web, 
-.task-app, 
-.task-design,
-.task-marketing {
+.btn-task
+{
   background-color:var(--fifth-color);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
@@ -430,63 +383,50 @@ cursor: pointer;
 padding: 6px 22px;
 }
 
-.task-all,
-.task-web,
-.task-app,
-.task-design,
-.task-marketing:not(:last-child) {
+.btn-task:not(:last-child) {
   margin-right: 8px;
 }
 
 
-.task-all:hover,
-.task-web:hover, 
-.task-app:hover, 
-.task-design:hover,
-.task-marketing:hover
+.btn-task:hover
 {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   cursor: pointer;
 }
-
+.poster-section{
+  padding: 94px 0;
+}
 .poster {
-  background-color: var(--primary-white-color);
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-left: 0px;
   padding-bottom: 94px;
   margin-bottom: 0;
  }
-
+.poster-text{
+  padding: 20px 24px;
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
 
 .poster-card {
-  flex-basis: calc((100%-30px*2)/3);
   margin-bottom: 20px;
-  outline: 1px solid rgba(238, 238, 238, 1);
-  outline-offset: -2px;
-}
-.posters-container{
-  margin-bottom: 94px;
-}
+  }
 
 .heading {
 font-weight: 700;
 font-size: 18px;
 line-height: 2.00;
 letter-spacing: 0.06em;
-margin-top: 20px;
-margin-left: 24px;
-}
+ }
 
 
 .description {
   color: var(--title-text-color);
 font-size: 16px;
 line-height: 1.87;
-margin-left: 24px;
 }
 
 
