@@ -172,6 +172,10 @@ padding: 32px 0;
 
 .link-contacts-mail,
 .link-contacts-tel{
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
   color:var(--title-text-color);
   text-decoration: none;
 
@@ -269,7 +273,7 @@ line-height: 1.71;
 
 /*Чим ми займаємось*/
 .work{ 
-  padding: 94px 0;
+  padding-top: 0;
 }
 .work-type { 
   display: flex;
@@ -338,6 +342,7 @@ address{
 .address-type{
  color: var(--primary-white-color);
  text-decoration: none;
+line-height: 1.71;
 
 }
 .address-type:hover,
@@ -351,11 +356,13 @@ color: var(--accent-color);
 }
 
 
+
 .address-mail,
 .address-tel {
   color:rgba(255, 255, 255, 0.6);
 text-decoration: none;
 margin-top: 9px;
+line-height: 1.71;
 }
 
 .btn{
@@ -401,10 +408,9 @@ padding: 6px 22px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
-  margin-bottom: 0;
  }
-.poster-text{
+
+ .poster-text{
   padding: 20px 24px;
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
@@ -412,9 +418,7 @@ padding: 6px 22px;
 }
 
  
-.poster-card {
-  margin-bottom: 20px;
-  }
+
 
 .heading {
 font-weight: 700;
